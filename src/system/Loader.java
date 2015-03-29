@@ -11,7 +11,7 @@ public class Loader {
             System.out.println("Loaded class name: " + loadedMyClass.getName());
             Constructor constructor = loadedMyClass.getConstructor();
             Object myClassObject = constructor.newInstance();
-            Method method = loadedMyClass.getMethod(methodName);
+            Method method = loadedMyClass.getMethod(methodName, Map.class);
             //Method method = loadedMyClass.getDeclaredMethod(methodName);
             System.out.println("Invoked method name: " + method.getName());
             method.invoke(myClassObject, params);
