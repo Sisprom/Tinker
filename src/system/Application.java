@@ -23,7 +23,7 @@ public class Application {
 	public void run(){
 		Loader Loader = new Loader();
 		Config Config = new Config();
-		Map map = new HashMap();
+		Map map = new HashMap<String,String>();
 		map.put("key", "value");
 		Loader.controller(Config.defaultController,map);
 	}
