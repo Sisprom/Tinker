@@ -7,14 +7,14 @@ package comun;
  * @author edwardmf94
  *
  */
-import system.Application;
+import system.Tinker;
 public class Gstion {
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		Application App = Application.getInstance();
+		Tinker App = Tinker.getInstance();
 		App.run();
 	}
 }
